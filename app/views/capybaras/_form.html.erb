@@ -1,0 +1,17 @@
+<%= form_with(model: capybara, local: true) do |form| %>
+  <% if capybara.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(capybara.errors.count, "error") %> prohibited this capybara from being saved:</h2>
+
+      <ul>
+      <% capybara.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

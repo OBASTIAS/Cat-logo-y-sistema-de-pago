@@ -1,0 +1,2 @@
+class Capybara < ApplicationRecord
+end

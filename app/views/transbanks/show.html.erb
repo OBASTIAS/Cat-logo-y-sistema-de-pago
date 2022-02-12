@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Amount:</strong>
+  <%= @transbank.amount %>
+</p>
+
+<p>
+  <strong>Method:</strong>
+  <%= @transbank.method %>
+</p>
+
+<%= link_to 'Edit', edit_transbank_path(@transbank) %> |
+<%= link_to 'Back', transbanks_path %>
